@@ -1,0 +1,560 @@
+body {
+	font-family: Arial, sans-serif;
+} 
+nav {
+	width: 100%;
+	height: 61px;
+	
+	background-color:#344051 ;
+}
+.logo {
+	color: #ffffff;
+	float: left;
+	padding-left: 389px;
+	line-height: 61px;
+	font-size:28px ;
+}
+.menu {
+	float: left;
+	padding-left: 431px;
+}
+.menu li {
+	float: left;
+}
+.menu input {
+	color: #fff;
+	background-color: #344051;
+	line-height: 61px;
+	padding-right: 41px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.main {
+	width: 100%;
+	height: 1015px;
+	background: url(../img/timon_fon.png) 100% 80%/50% no-repeat, url(../img/fon.png) center/auto 110% no-repeat;
+	box-shadow: 0px -10px 10px #cecfd6 inset;
+}
+.title_main {
+	float: left;
+	margin: 434px 0px 0px 403px;
+	text-align: center;
+}
+.title_main h1 {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	color: #2c384a;
+}
+.title_main h4 {
+	text-align: center;
+	font-size: 22px;
+	color: #79818d;
+	margin-top:38px;
+}
+.title_main input {
+	margin-top: 55px ;
+	margin-right:13px ;
+	text-align: center;
+	width:95px ;
+	height:42px ;
+	border: 2px solid #6d7682;
+	border-radius: 5px;
+	background-color:#ebeaf1 ;
+}
+.about_me {
+	width: 100%;
+	height: 730px;
+	/*border: 1px solid #000;*/
+}
+.title_about_me {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.title_about_me h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}
+.title_about_me img {
+	margin-top: 31px;
+}
+.kartinka_timon {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.kartinka_timon img {
+	margin-top: 60px;
+	border: 0px solid #000000;
+	border-radius: 100%;
+	background-color: #f0f0f5;
+}
+.text_about_me {
+	/*border: 1px solid #000;*/
+	float: left;
+	margin-left: 594px;
+	
+}
+.text_about_me h4 {
+	margin-top: 27px;
+	text-align: left;
+	max-width: 729px;
+	color: #3f495a;
+	font-size: 16px;
+}
+.text_about_me h5 {
+	margin-top: 46px;
+	text-align: left;
+	max-width: 729px;
+	color: #3f495a;
+	font-size: 16px;
+}
+.ssilka {
+	width: 100%;
+	text-align: center;
+	float:left;
+	/*border: 1px solid #000;*/
+}
+.ssilka_border {
+	float: left;
+	width: 157px;
+	height: 34px;
+	border: 2px solid #6f707e;
+	border-radius: 5px;
+	margin-top: 37px;
+	margin-left: 886px;
+	color: #6f707e;
+}
+.ssilka_border img {
+	margin-top: 8px;
+}
+.ssilka_border a {
+	line-height: 34px;
+	font-weight: bold;
+}
+.i_do {
+	width: 100%;
+	height: 523px;
+	background: url(../img/do_fon.png);
+}
+.title_do {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.title_do h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}
+.title_do img {
+	margin-top: 31px;
+
+}
+.skills {
+	float: left;
+	width: 100%;
+
+}
+.skills ul {
+	margin-top: 102px;
+	margin-left: 415px;
+}
+.skills li {
+	float: left;
+	text-align: center;
+	margin-right: 84px;
+}
+.skills h5 {
+	margin-top: 40px;
+	color: #cf7600;
+	font-size: 17px;
+	text-transform: capitalize;
+}
+.skills p {
+	margin-top: 21px;
+	font-size: 13px;
+	max-width: 210px;
+	text-align: center;
+	color: #515a68;
+}
+.keys {
+	width: 100%;
+	height: 1253px;
+}
+.title_keys { 
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.title_keys h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}
+.title_keys img {
+	margin-top: 30px;
+}
+.title_keys h5 {
+	margin-top: 39px;
+	color: #3f495a;
+	font-size: 16px;
+}
+.fotka {
+	float: left;
+	width: 100%;
+}
+.fotka img {
+	margin-top: 42px;
+	width: 1168px;
+	margin-left: 386px;
+}
+.text {
+	float: left;
+	width: 100%;
+}
+.client_website {
+	float: left;
+	margin-left: 385px;
+	width: 204px;
+	height: 169px;
+	margin-right: 84px;
+}
+.client_website h4 {
+	width:100%;
+	height:27px ;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.client_website p {
+	width:100%;
+	height:18px ;
+	margin-bottom:10px ;
+	font-size: 15px;
+}
+.client_website h5 {
+	width:100%;
+	height:27px ;
+	margin-bottom:10px ;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.client_website a {
+	width:100%;
+	height:18px ;
+}
+.client_website input {
+	margin-top: 10px;
+	border: 1px solid #63b5ae;
+	border-radius: 6px;
+	width:100%;
+	height: 44px;
+	line-height: 44px;
+	color: #ffffff;
+	background-color:#63b5ae;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.proekt {
+	width: 1558px;
+}
+.proekt h4 {
+	text-align: left;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+	color:#384354 ;
+}
+.proekt p {
+	color: #3f495a;
+	font-size: 17px;
+}
+.raschet {
+	width: 100%;
+	height: 750px;
+}
+.title_raschet {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.title_raschet h2 {
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}	
+.form_1 {
+	float: left;
+	margin-top:60px ;
+	margin-left:494px ;
+	background: url(../img/liniya_poditog.png)0px 432px/auto no-repeat;
+}
+.form_1 h2 {
+	margin-left: 3px;
+	margin-bottom: 24px;
+	color:#1c2534 ;
+	font-size:16px ;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: bold;
+
+}
+#tip_saita {
+	margin-bottom: 49px;
+	width: 891px ;
+	height: 57px;
+	background:url(../img/selekt_galochka.png)845px 50%/auto no-repeat #eee;
+    -webkit-appearance: none;
+    padding-left:24px ;
+    color: #737373;
+    font-size: 16px;
+}
+#dizain_saita {
+	margin-bottom: 49px;
+	width: 891px ;
+	height: 57px;
+	background:url(../img/selekt_galochka.png)845px 50%/auto no-repeat #eee;
+    -webkit-appearance: none;
+    padding-left:24px ;
+    color: #737373;
+    font-size: 16px;
+}
+#adaptiv_saita {
+	margin-bottom: 65px;
+	width: 891px ;
+	height: 57px;
+	background:url(../img/selekt_galochka.png)845px 50%/auto no-repeat #eee;
+    -webkit-appearance: none;
+    padding-left:24px ;
+    color: #737373;
+    font-size: 16px;
+}
+.itog {
+	float: left;
+	width: 100%;
+}
+.itog h4 {
+	float: left;
+	width: 100px;
+	margin-bottom: 27px;
+	margin-right:771px ;
+	color: #4d525b;
+	font-size: 16px;
+	font-weight: bold;
+}
+.itog p {
+	color:#1c2534 ;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.statistiks {
+	width: 100%;
+	height: 499px;
+	background: url(../img/fon_stats.png);
+}
+.title_stastistiks {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.title_stastistiks h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}
+.title_stastistiks img {
+	margin-top: 32px;
+}
+.stats {
+	float: left;
+	width: 100%;
+	margin-top: 89px;
+
+}
+.stats ul {
+	margin-left: 437px;
+}
+.stats li {
+	float: left;
+	margin-right: 126px;
+	text-align:center;
+	width: 167px;
+}
+.stats img {
+	margin-bottom:33px ;
+}
+.stats h3 {
+	font-size:25px ;
+	font-weight: bold;
+	margin-bottom:30px ;
+}
+.otziv {
+	width: 100%;
+	height: 591px;
+}
+.titel_otziv {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.titel_otziv h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #263244;
+	font-weight: bold;
+}
+.zakazchik {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.zakazchik img {
+	width: 99px;
+	height: 99px;
+	border: 0px solid #ffffff;
+	border-radius: 100%;
+	background-color: #ddd;
+	margin-top:59px ;
+}
+.zakazchik h4 {
+	margin-top: 39px;
+	font-size: 16px;
+	color: #243042;
+}
+.zakazchik h5 {
+	color: #243042;
+	margin-top:40px ;
+	font-size: 16px;
+}
+.zakazchik span {
+	font-weight: bold;
+}
+.zakazchik input {
+	margin-top:51px ;
+}
+.kontakt {
+	width: 100%;
+	height: 808px;
+	background: url(../img/fon_kontakti.png);
+}
+.titel_kontakt {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.titel_kontakt h2 {
+	margin-top: 108px;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.titel_kontakt img {
+	margin-top: 32px;
+}
+.titel_kontakt h4 {
+	color: #ffffff;
+	font-size:16px ;
+	font-weight: bold;
+	margin-top:35px ;
+}
+.kont_ico {
+	float: left;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+}
+.kont_ico img {
+	margin-bottom:16px ;
+}
+.kont_ico ul {
+	margin-left: 615px;
+	margin-top:51px ;
+}
+.kont_ico li {
+	float: left;
+	width: 154px;
+	margin-right:102px ;
+}
+.soobshenie {
+	float: left;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 41px;
+}
+.soobshenie h2 {
+	font-size:18px ;
+	font-weight: bold;
+}
+.knopki_2 {
+	float: left;
+	margin-left: 594px;
+	margin-top: 46px;
+}
+.knopki_2 input {
+	margin-right: 29px;
+	width: 352px;
+	height: 34px;
+	padding-left: 7px;
+	color:#5d5d5e ;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.text_area {
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+.text_area textarea {
+	margin-top:14px ;
+	margin-left: 595px;
+	width: 732px;
+	height: 94px;
+}
+.otpravit {
+	float: left;
+	width: 100%;
+}
+.otpravit input {
+	margin-top: 28px;
+	border: 2px solid #ffffff;
+	border-radius: 6px;
+	background: transparent;
+	color: #ffffff;
+	width: 125px;
+	height: 46px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+footer {
+	color:#ffffff ;
+	width:100% ;
+	height:96px ;
+	background-color:#354051;
+	text-align: center;
+	font-size:16px ;
+	line-height: 96px;
+}
