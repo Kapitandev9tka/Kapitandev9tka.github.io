@@ -1,18 +1,90 @@
 body {
 	font-family: Arial, sans-serif;
 } 
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #344051;
+	z-index: 99999;
+}
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #f28e09;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 1.5s infinite ease-in-out;
+}
 nav {
 	width: 100%;
-	height: 61px;
-	
+	height: 61px;	
 	background-color:#344051 ;
+	position: fixed;
+	z-index: 200;
+	margin-top: -62px;
+	animation: ninja_nav 0.6s forwards;
+}
+@keyframes ninja_nav {
+	0% {
+		margin-top: -62px;
+	}
+	100% {
+		margin-top: 0px;
+	}
 }
 .logo {
-	color: #ffffff;
-	float: left;
+	color:#ffffff;
+	float:left;
 	padding-left: 389px;
 	line-height: 61px;
-	font-size:28px ;
+	font-size:30px ;
 }
 .menu {
 	float: left;
@@ -21,13 +93,24 @@ nav {
 .menu li {
 	float: left;
 }
-.menu input {
+.menu a {
 	color: #fff;
-	background-color: #344051;
 	line-height: 61px;
-	padding-right: 41px;
+	margin-right: 41px;
 	font-size: 16px;
 	text-transform: uppercase;
+	transition:all 0.3s;
+	transform: scale(1.0);
+	display: inline-block;
+}
+.menu li a:visited {
+	color: #fff;
+}
+.menu li a:hover {
+	color: #d17700;
+}
+.menu li a:active {
+	transform: scale(1.5);
 }
 .main {
 	width: 100%;
@@ -39,7 +122,15 @@ nav {
 	float: left;
 	margin: 434px 0px 0px 403px;
 	text-align: center;
+	opacity: 0;
+	animation: hello 0.6s 0.8s forwards;
 }
+@keyframes hello {
+	0% 
+	{ opacity: 0; }
+	100%
+	{opacity: 1;}
+}	
 .title_main h1 {
 	text-align: center;
 	font-size: 60px;
@@ -61,11 +152,23 @@ nav {
 	border: 2px solid #6d7682;
 	border-radius: 5px;
 	background-color:#ebeaf1 ;
+	transition:all 0.3s;
+	transform: scale(1.0);
+}
+.title_main input:hover {
+	background-color: #6d7682;
+	color: #fff;
+}
+.title_main input:active {
+	transform: scale(1.1);
+}
+#title_main_button_2 {
+	width: 126px;
 }
 .about_me {
 	width: 100%;
 	height: 730px;
-	/*border: 1px solid #000;*/
+	text-align: center;
 }
 .title_about_me {
 	float: left;
@@ -92,59 +195,87 @@ nav {
 	border: 0px solid #000000;
 	border-radius: 100%;
 	background-color: #f0f0f5;
+	transform: scale(1);
+	transition: all 0.5s;
+}
+.kartinka_timon img:hover {
+	border: 1px solid #000000;
+	transform: scale(1.2);
 }
 .text_about_me {
-	/*border: 1px solid #000;*/
 	float: left;
-	margin-left: 594px;
-	
+	width: 100%;
 }
 .text_about_me h4 {
-	margin-top: 27px;
-	text-align: left;
-	max-width: 729px;
+	margin: 27px auto;
+	margin-bottom: 0px;
+	max-width: 730px;
 	color: #3f495a;
 	font-size: 16px;
+	text-align: left;
 }
 .text_about_me h5 {
-	margin-top: 46px;
-	text-align: left;
-	max-width: 729px;
+	margin: 45px auto;
+	margin-bottom: 0px;
+	max-width: 730px;
 	color: #3f495a;
+	text-align: left;
 	font-size: 16px;
 }
-.ssilka {
-	width: 100%;
-	text-align: center;
-	float:left;
-	/*border: 1px solid #000;*/
-}
-.ssilka_border {
+.about_me a  {
+	background: none;
+	position: relative;
 	float: left;
-	width: 157px;
-	height: 34px;
+	width:157px ;
+	height:34px ;
 	border: 2px solid #6f707e;
-	border-radius: 5px;
-	margin-top: 37px;
-	margin-left: 886px;
+	border-radius: 6px;
 	color: #6f707e;
+	margin: 37px 0px 0px 886px;
+	padding-top: 10px;
+	font-size: 16px;
+	transition: all 0.2s;
+	transform: scale(1.0);
 }
-.ssilka_border img {
-	margin-top: 8px;
+.about_me a img {
+	float: left;
+	margin:0px 5px 0px 6px;
 }
-.ssilka_border a {
-	line-height: 34px;
-	font-weight: bold;
+.about_me a:hover {
+	color: #fff;
+}
+.about_me a:before{
+	content: "";
+	background: #6f707e;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.5s all  ;
+	z-index: -1;
+	width: 0%;
+	height: 100%;
+}
+.about_me a:hover:before{
+	width: 100%;
+	color: #fff;
+}
+.about_me a:active {
+	transform: scale(1.3);
+	box-shadow: 0px 0px 0px #6f707e;
+	color:#fff ;
 }
 .i_do {
 	width: 100%;
 	height: 523px;
-	background: url(../img/do_fon.png);
+	background: url(../img/do_fon.png) center/cover no-repeat fixed;
+	box-shadow: 0px 10px 10px #cecfd6 inset;
 }
 .title_do {
 	float: left;
 	width: 100%;
 	text-align: center;
+	z-index: -1;
 }
 .title_do h2 {
 	margin-top: 108px;
@@ -155,12 +286,10 @@ nav {
 }
 .title_do img {
 	margin-top: 31px;
-
 }
 .skills {
 	float: left;
 	width: 100%;
-
 }
 .skills ul {
 	margin-top: 102px;
@@ -171,11 +300,24 @@ nav {
 	text-align: center;
 	margin-right: 84px;
 }
+.skills li img {
+	transform:scale(1.0) ;
+	transition:all 0.3s ;
+}
+.skills li img:hover {
+	transform:scale(1.3) ;
+}
 .skills h5 {
 	margin-top: 40px;
 	color: #cf7600;
 	font-size: 17px;
 	text-transform: capitalize;
+	font-weight: bold;
+	transform:scale(1.0) ;
+	transition:all 0.3s ;
+}
+.skills h5:hover {
+	transform:scale(1.3) ;
 }
 .skills p {
 	margin-top: 21px;
@@ -183,6 +325,15 @@ nav {
 	max-width: 210px;
 	text-align: center;
 	color: #515a68;
+	transform:scale(1.0) ;
+	transition:all 0.3s ;
+}
+.skills p:hover {
+	transform:scale(1.3) ;
+}
+@keyframes lypa:hover {
+	0% {transform: scale(1.0);}
+	100%{transform: scale(1.3);}
 }
 .keys {
 	width: 100%;
@@ -256,7 +407,15 @@ nav {
 }
 .client_website a {
 	width:100%;
-	height:18px ;
+	height:18px;
+	color: #000;
+	transition: all 0.1s;
+}
+.client_website a:hover {
+	color: #0b27f5;
+}
+.client_website a:visited {
+	color:#541386;
 }
 .client_website input {
 	margin-top: 10px;
@@ -270,6 +429,19 @@ nav {
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
+	transform: scale(1.0);
+	transition: all 0.3s;
+	animation: animate__shakeX;
+}
+.client_website input:hover {
+	border: 2px solid #f2900f ;
+	color: #f2900f;
+	background-color: #fff;
+}
+.client_website input:active {
+	transform: scale(1.2);
+	border: 2px solid #f2900f ;
+	color: #f2900f;
 }
 .proekt {
 	width: 1558px;
@@ -368,7 +540,7 @@ nav {
 .statistiks {
 	width: 100%;
 	height: 499px;
-	background: url(../img/fon_stats.png);
+	background: url(../img/fon_stats.png)center/cover no-repeat fixed;;
 }
 .title_stastistiks {
 	float: left;
@@ -418,7 +590,7 @@ nav {
 	text-align: center;
 }
 .titel_otziv h2 {
-	margin-top: 108px;
+	margin: 108px 0px 34px 0px;
 	text-transform: uppercase;
 	font-size: 28px;
 	color: #263244;
@@ -451,8 +623,9 @@ nav {
 	font-weight: bold;
 }
 .zakazchik input {
-	margin-top:51px ;
+	margin-top:51px ;	
 }
+
 .kontakt {
 	width: 100%;
 	height: 808px;
@@ -464,18 +637,15 @@ nav {
 	text-align: center;
 }
 .titel_kontakt h2 {
-	margin-top: 108px;
+	margin: 108px 0px 32px 0px;
 	text-transform: uppercase;
 	font-size: 28px;
 	color: #ffffff;
 	font-weight: bold;
 }
-.titel_kontakt img {
-	margin-top: 32px;
-}
 .titel_kontakt h4 {
 	color: #ffffff;
-	font-size:16px ;
+	font-size:16px 0px 51px 0px ;
 	font-weight: bold;
 	margin-top:35px ;
 }
@@ -496,49 +666,55 @@ nav {
 	float: left;
 	width: 154px;
 	margin-right:102px ;
+	font-weight: bold;
 }
 .soobshenie {
 	float: left;
 	width: 100%;
 	color: #ffffff;
 	text-align: center;
-	margin-top: 41px;
 }
 .soobshenie h2 {
-	font-size:18px ;
+	margin:39px 0px 46px 0px ;
+	font-size:25px ;
 	font-weight: bold;
 }
 .knopki_2 {
-	float: left;
-	margin-left: 594px;
-	margin-top: 46px;
+	width: 100%;
 }
 .knopki_2 input {
-	margin-right: 29px;
 	width: 352px;
 	height: 34px;
 	padding-left: 7px;
 	color:#5d5d5e ;
 	text-transform: capitalize;
 	font-size: 16px;
+	transition: all 0.3s;
+	outline:3px solid #151e2e;
+	margin:0px 10px;
 }
-.text_area {
-	float: left;
-	width: 100%;
-	text-align: left;
+.knopki_2 input:hover {
+	outline:3px solid #f79109 ;
 }
-.text_area textarea {
-	margin-top:14px ;
-	margin-left: 595px;
-	width: 732px;
-	height: 94px;
+.knopki_2 input:focus {
+	outline:3px solid #f79109 ;
 }
-.otpravit {
-	float: left;
-	width: 100%;
+.textarea {
+	margin: 14px auto;
+	min-height:94px ;
+	min-width:732px ;
+	max-width: 732px;
+	max-height: 94px;
+	resize: none;
+}
+.textarea:hover{
+	outline:3px solid #f79109 ;
+}
+.textarea:focus{
+	outline:3px solid #f79109 ;
 }
 .otpravit input {
-	margin-top: 28px;
+	margin-top: 14px;
 	border: 2px solid #ffffff;
 	border-radius: 6px;
 	background: transparent;
@@ -548,6 +724,14 @@ nav {
 	font-weight: bold;
 	font-size: 15px;
 	text-align: center;
+	transform: scale(1.0);
+	transition: all 0.3s;
+}
+.otpravit input:hover {
+	transform: scale(1.3);
+}
+.otpravit input:active {
+	transform: scale(1.0)
 }
 footer {
 	color:#ffffff ;

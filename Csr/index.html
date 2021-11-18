@@ -8,6 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class="preloader">
+  		<div class="preloader__row">
+    		<div class="preloader__item"></div>
+    		<div class="preloader__item"></div>
+  		</div>
+</div>
 	<header>
 		<nav>
 			<div class="logo">
@@ -15,25 +21,26 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<li><input type="submit" name="" value="обо мне"></li>
-					<li><input type="submit" name="" value="услуги"></li>
-					<li><input type="submit" name="" value="кейсы"></li>
-					<li><input type="submit" name="" value="прайс"></li>
-					<li><input type="submit" name="" value="отзывы"></li>
-					<li><input type="submit" name="" value="контакты"></li>
+					<li><a href="#">обо мне</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">кейсы</a></li>
+					<li><a href="#">прайс</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li><a href="#">контакты</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	<div class="main">
+	<main>
+	<section class="main">
 		<div class="title_main">
 			<h1>Привет <br>Я Timon</h1>
 			<h4>Фулл стек веб-разработчик</h4>
-			<input type="submit" name="" value="Обо мне">
-			<input type="submit" name="" value="Мои работы">
+			<input type="button" name="" value="Обо мне">
+			<input type="button" name="" value="Мои работы" id="title_main_button_2">
 		</div>		
-	</div>
-	<div class="about_me">
+	</section>
+	<section class="about_me">
 		<div class="title_about_me">
 			<h2>Обо мне</h2>
 			<img src="img/cherta_zagolovka_1.png">
@@ -45,16 +52,11 @@
 			<h4>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Maiores consequatur voluptates voluptatem, neque corporis temporibus explicabo architecto atque sint repudiandae fugit, numquam maxime enim rem.</h4>
 			<h5>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Maiores consequatur voluptates voluptatem, neque corporis temporibus explicabo architecto atque sint repudiandae fugit, numquam maxime enim rem.</h5>
 		</div>
-		
-		<div class="ssilka">
-			<div class="ssilka_border">
-				<img src="img/download.png">
-				<a href="" download>Скачать резюме</a>
-			</div>
-		</div>	
-		</div>
-	</div>
-	<div class="i_do">
+		<a href="" download>
+			<p>Скачать резюме</p>
+		</a>	
+	</section>
+	<section class="i_do">
 		<div class="title_do">
 			<h2>Что я умею</h2>
 			<img src="img/cherta_zagolovka_2.png">
@@ -76,15 +78,15 @@
 					<h5>CEO-оптимизация</h5>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo laboriosam nobis deserunt rerum ipsam?</p>
 				</li>
-				<li>
+				<li id="last_li">
 					<img src="img/grammafon.png" alt="граммофон">
 					<h5>Маркетинг</h5>
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae cum corporis, est rem sint.</p>
 				</li>
 			</ul>
 		</div>
-	</div>
-	<div class="keys">
+	</section>
+	<section class="keys">
 		<div class="title_keys">
 			<h2>кейсы</h2>
 			<img src="img/cherta_zagolovka_3.png">
@@ -99,7 +101,7 @@
 				<p>какая-то компания</p>
 				<h5>website:</h5>
 				<a href="">http:/www.somedomain.com</a>
-				<input type="submit" name="" value="wisit live site">
+				<input  type="submit" name="" value="wisit live site">
 			</div>
 			<div class="proekt">
 				<h4>Название проекта</h4>
@@ -107,8 +109,8 @@
 			</div>
 		</div>
 		
-	</div>
-	<div class="raschet">
+	</section>
+	<section class="raschet">
 		<div class="title_raschet">
 			<h2>Расчет стоимости</h2>
 		</div>
@@ -138,8 +140,8 @@
 				<p>0</p>
 			</div>
 		</form>
-	</div>
-	<div class="statistiks">
+	</section>
+	<section class="statistiks">
 		<div class="title_stastistiks">
 			<h2>немного статистики</h2>
 			<img src="img/cherta_zagolovka_3.png">
@@ -168,8 +170,8 @@
 				</li>
 			</ul>
 		</div>
-	</div>
-	<div class="otziv">
+	</section>
+	<section class="otziv">
 		<div class="titel_otziv">
 			<h2>отзывы</h2>
 			<img src="img/cherta_zagolovka_3.png">
@@ -178,12 +180,12 @@
 			<img src="img/png_chel.png" alt="дяденька заказчик">
 			<h4>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Tempore, fuga.</h4>
 			<h5><span>Дяденька</span>, Ген директор ОАО"дядь" </h5>
-			<input type="radio" name="rad">
+			<input type="radio" name="rad" checked>
 			<input type="radio" name="rad">
 			<input type="radio" name="rad">
 		</form>
-	</div>
-	<div class="kontakt">
+	</section>
+	<section class="kontakt">
 		<div class="titel_kontakt">
 			<h2>мои контакты</h2>
 			<img src="img/cherta_zagolovka_3.png">
@@ -208,24 +210,25 @@
 			<form class="soobshenie" action="#">
 				<h2>Оставьте мне сообщение</h2>
 				<div class="knopki_2">
-				<input type="text" name="" placeholder="имя">
-				<input type="text" name="" placeholder="email">
+					<input type="text" name="" placeholder="имя">
+					<input type="text" name="" placeholder="email">
 				</div>
-				<div class="text_area">
-				<textarea name="" id="" > </textarea>
-				</div>
+					<textarea class="textarea" name="" id="" > </textarea>
 				<div class="otpravit">
-					<input type="text" name="" value="Отправить">
+					<input class="otpravit" type="submit" name="" value="Отправить">
 				</div>
 			</form>
-	</div>
-	<!-- <div class="karta"> -->
-		<!-- <img src="img/here.png" alt="карта"> -->
-	<!-- </div> -->
+	</section>
+</main>
 	<footer>
 		<div class="copyright">
 			<p>copyright©2021 kapitanDev9tka. design Web</p>
 		</div>
 	</footer>
+	<script>
+  		window.onload = function () {
+    		document.body.classList.add('loaded');
+  		}
+	</script>
 </body>
 </html>
