@@ -1,0 +1,7 @@
+@font-face {
+	font-family: "Franklin_gotik";
+	src: url("../fonts/FRADM.eot");
+	src: local("☺"), url("../fonts/FRADM.woff") format("woff"), url("../fonts/FRADM.ttf") format("truetype"),
+		url("../fonts/FRADM.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
